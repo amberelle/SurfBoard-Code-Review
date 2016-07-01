@@ -1,7 +1,9 @@
 body{
   margin:0;
   padding:0;
-  background: #E9E8D7;
+  background: #C2ECEB;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
 }
 
 .container {
@@ -9,7 +11,10 @@ body{
 
 }
 
-
+@font-face{
+  font-family: 'CasualFeena';
+  src:url("fonts/FEENC__.ttf");
+}
 
 #bigpic {
   width:100%;
@@ -31,6 +36,8 @@ body{
   float:left;
   padding-left: 30px;
   color:white;
+  font-family: 'CasualFeena';
+  font-size: 48px;
 }
 
 
@@ -46,16 +53,22 @@ body{
 
 .summary{
   width:100%;
-  background-color: #E9E8D7;
-  text-align: center;
-  padding: 30px;
+  background-color: #C2ECEB;
+
+  padding: 20px 0 20px 0;
   color:black;
+
+}
+
+.summary p{
+  text-align: center;
+  padding:50px;
 }
 
 
 .board {
   background: white;
-  width:300px;
+  width:30%;
   float: left;
     margin: 10px;
 }
@@ -69,22 +82,22 @@ body{
 }
 
 #img1{
-  width:290px;
-  height: 200px;
+  width:95%;
+height: 190px;
   padding: 5px;
 
 }
 
 #img2{
-  width:290px;
-  height: 200px;
+  width:96%;
+  height: 190px;
   padding: 5px;
 
 }
 
 #img3{
-  width:290px;
-  height: 200px;
+  width:96%;
+height: 190px;
   padding: 5px;
 
 }
