@@ -2,8 +2,15 @@ body{
   margin:0;
   padding:0;
   background: #C2ECEB;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Calibri";
   font-size: 18px;
+}
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .container {
@@ -13,7 +20,7 @@ body{
 
 @font-face{
   font-family: 'CasualFeena';
-  src:url("fonts/FEENC__.ttf");
+  src:url("fonts/FEENC___.ttf");
 }
 
 #bigpic {
@@ -32,7 +39,7 @@ body{
   border-color: white;
 
 }
-#nav h3 {
+#nav h1 {
   float:left;
   padding-left: 30px;
   color:white;
@@ -52,11 +59,10 @@ body{
 }
 
 .summary{
-  width:100%;
-  background-color: #C2ECEB;
 
-  padding: 20px 0 20px 0;
-  color:black;
+  color:white;
+  position: absolute;
+  top:550px;
 
 }
 
@@ -68,23 +74,27 @@ body{
 
 .board {
   background: white;
-  width:30%;
+  width:31.5%;
   float: left;
     margin: 10px;
 }
 .board h3 {
   float:left;
-  padding-left: 5px;
+  padding-left: 10px;
+}
+
+.board h3::before{
+  content:"∴";
 }
 .board h4 {
   float:right;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 #img1{
   width:95%;
 height: 190px;
-  padding: 5px;
+  padding: 10px;
 
 }
 
@@ -110,9 +120,54 @@ height: 190px;
 
 }
 
+
+
+
+/*search button styling*/
+
+  #tfnewsearch{
+    text-align: center;
+
+    padding:10px;
+  }
+  .tftextinput{
+    margin: 0;
+    padding: 5px 15px;
+
+    font-size:14px;
+    border:1px solid lightgrey; border-right:0px;
+    border-top-left-radius: 3px 3px;
+    border-bottom-left-radius: 3px 3px;
+  }
+  .tfbutton {
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    text-align: center;
+    color: white;
+    border: solid 1px lightgrey; border-right:0px;
+    background: lightgrey;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+  }
+  .tfbutton:hover {
+    background: turquoise;
+  }
+
+
+  .tfclear{
+    clear:both;
+  }
+
+
 .cf{
   clear:both;
 }
+
+
+
+
 
 /*.foot{
   background-color: red;
